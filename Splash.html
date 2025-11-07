@@ -1,0 +1,170 @@
+---
+layout: default
+title: Himalayan Horizons
+description: Where Music, Math, Mountains, and Motion Converge
+---
+
+<style>
+  :root {
+    --violin-brown: #6b4e3d;
+    --pool-blue: #1a6b8c;
+    --math-purple: #4a2b6b;
+    --mountain-green: #2a4d3a;
+  }
+
+  .hero {
+    height: 100vh;
+    background: linear-gradient(
+      45deg,
+      var(--violin-brown),
+      var(--mountain-green)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+
+  .interest-section {
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+  }
+
+  .number-fact {
+    background: var(--math-purple);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 1rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .interest-section {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="hero">
+  <div>
+    <h1>Exploring Peaks & Patterns</h1>
+    <p class="lead">From Violin Strings to Mountain Ridges</p>
+  </div>
+</div>
+
+<section class="interest-section" style="background-color: #f8f9fa">
+  <div>
+    <h2><i class="fas fa-music"></i> Baroque Violin Virtuosity</h2>
+    <p>My current obsession: Bach's Chaconne in D Minor. Did you know?</p>
+    <ul>
+      <li>Paganini's 24 Caprices revolutionized violin technique</li>
+      <li>Stradivari's "Messiah" violin has never been played</li>
+      <li>Proper bow hold reduces injury risk by 40%</li>
+    </ul>
+  </div>
+  <img src="/assets/violin.jpg" alt="Baroque violin" class="img-fluid" />
+</section>
+
+<div class="parallax" style="background-image: url('/assets/swim-bg.jpg')">
+  <div class="container text-white text-center py-5">
+    <h2>Competitive Swimming Science</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>2.5s</h3>
+        <p>Time saved per lap with perfect flip turns</p>
+      </div>
+      <div class="col-md-4">
+        <h3>57%</h3>
+        <p>Oxygen efficiency increase in elite swimmers</p>
+      </div>
+      <div class="col-md-4">
+        <h3>0.01mm</h3>
+        <p>Olympic suit texture depth optimization</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section
+  style="padding: 4rem 2rem; background: var(--math-purple); color: white"
+>
+  <h2 class="text-center mb-4">Number Theory Nuggets</h2>
+  <div class="row">
+    <div class="col-md-4 number-fact">
+      <h3>Palindromic Primes</h3>
+      <p>
+        1000000000000066600000000000001 is "Belfegor's Prime" - a 1 followed by
+        13 zeros, 666, 13 zeros, and a 1
+      </p>
+    </div>
+    <div class="col-md-4 number-fact">
+      <h3>Perfect Numbers</h3>
+      <p>
+        All even perfect numbers end in 6 or 28 - proven! Odd perfect numbers
+        remain elusive
+      </p>
+    </div>
+    <div class="col-md-4 number-fact">
+      <h3>Collatz Conjecture</h3>
+      <p>
+        Simple 3n+1 problem unsolved for 85+ years. Tested up to 2⁶⁸ - always
+        reaches 1
+      </p>
+    </div>
+  </div>
+</section>
+
+<section
+  class="interest-section"
+  style="background-color: var(--mountain-green); color: white"
+>
+  <div>
+    <h2><i class="fas fa-mountain"></i> Uttarakhand 5000+ Treks</h2>
+    <h3>Satopanth Tal</h3>
+    <ul>
+      <li>Altitude: 4,600m (Base Camp) to 7,000m+ peaks</li>
+      <li>Glacial lake shaped like triangle</li>
+      <li>Mythical trinity bathing spot</li>
+    </ul>
+    <h3>Safety Essentials</h3>
+    <ul>
+      <li>AMS prevention: 300m/day elevation gain rule</li>
+      <li>Pulse oximeter readings >90% crucial</li>
+      <li>Triple insulation strategy for -20°C nights</li>
+    </ul>
+  </div>
+  <div>
+    <img
+      src="/assets/trek-map.jpg"
+      alt="Uttarakhand trek map"
+      class="img-fluid"
+    />
+    <div class="mt-3">
+      <h4>Pro Tip</h4>
+      <p>
+        Use Fibonacci sequence for altitude acclimatization: 1, 1, 2, 3, 5 day
+        phases
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-4 bg-dark text-white">
+  <p>
+    Let's Connect! Drop me a note to discuss violin concertos, flip turn
+    techniques, Riemann hypotheses, or glacier routes
+  </p>
+  <button class="btn btn-outline-light">Start Adventure</button>
+</footer>
