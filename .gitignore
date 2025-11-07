@@ -1,0 +1,72 @@
+# Jekyll generated site
+_site/
+.sass-cache/
+
+# Bundler / Ruby
+/.bundle
+/vendor/bundle
+*.gem
+*.rbc
+.bundle/
+.ruby-version
+.ruby-gemset
+
+# Gems + lockfile
+# Keep Gemfile.lock in repo for reproducible builds (recommended)
+# If you prefer not to, uncomment the next line
+# Gemfile.lock
+
+# Node / JS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+Icon?
+ehthumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*~
+.project
+.classpath
+.settings/
+
+# Logs and temp
+log/
+tmp/
+*.log
+
+# Env files
+.env
+.env.*.local
+.env.local
+
+# macOS metadata
+.DS_Store
+
+# If your src/ contains compiled language source or build artifacts:
+# Ignore compiled binaries and object files (example for src/ruby-3.3.6)
+src/**/miniruby
+src/**/*.o
+src/**/ruby
+src/**/ruby-*
+
+# Optional: ignore large vendor folders
+src/**/ext/
+src/**/build/
+
+# Misc
+coverage/
+.byebug_history
+*.pem
