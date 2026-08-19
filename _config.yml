@@ -1,62 +1,64 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Little Bits & Pieces
 email: kaushik007datta@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Love for all things BIG or small
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site, e.g. http://example.com
+description: "Love for all things BIG or small"
 
+# If this is a user/organization site (KayDutt.github.io) leave baseurl empty.
+# If this is a project site, set baseurl to the repo name, e.g. "/MyWebsite"
+baseurl: ""
+
+# Use the real published URL (use https). Update this to your actual Pages URL.
+url: "https://kaydutt.github.io"
+
+# GitHub metadata
 github_username: KayDutt
+repository: KayDutt/MyWebsite
 
-# Build settings
-theme: "jekyll-theme-clean-blog"
-remote_theme: "blackrockdigital/startbootstrap-clean-blog-jekyll"
+# Theme / remote theme
+# Use remote_theme for the Start Bootstrap Clean Blog theme on GitHub Pages.
+remote_theme: blackrockdigital/startbootstrap-clean-blog-jekyll
+
+# Build / plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Markdown / syntax highlighting
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+
+# Useful site settings
+timezone: "Asia/Kolkata"   # change to your timezone if needed
+lang: en
+permalink: /:categories/:year/:month/:day/:title/
+
+# Exclude files/dirs from processing to speed up builds
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - README.md
+
+# Defaults for collections
 defaults:
   - scope:
-      path: "_posts" # empty string means all files
+      path: "_posts"
     values:
       layout: "post"
-      author: "Qay D-I-Y"
+      author:
+        name: "Kaushik Datta"
+        email: "kaushik007datta@gmail.com"
+
+# Optional social / author metadata for templates
+author:
+  name: "Kaushik Datta"
+  email: kaushik007datta@gmail.com
+  github: KayDutt
